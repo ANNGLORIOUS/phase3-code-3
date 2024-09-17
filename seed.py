@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 import random
 
-engine = create_engine('sqlite:///concerts.db')
+engine = create_engine('sqlite:///lib/concerts.db')
 Session = sessionmaker(bind=engine)
 session = Session()
 
