@@ -7,7 +7,7 @@ from sqlalchemy import func
 sys.path.append(os.getcwd)
 
 
-engine = create_engine('sqlite:///concerts.db', echo=True)
+engine = create_engine('sqlite:///lib/concerts.db', echo=True)
 Session = sessionmaker(bind=engine)
 session = Session()
 Base = declarative_base()
